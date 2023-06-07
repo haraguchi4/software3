@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named absdiff
+# Target rules for targets named absdiff2
 
 # Build rule for target.
-absdiff: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 absdiff
-.PHONY : absdiff
+absdiff2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 absdiff2
+.PHONY : absdiff2
 
 # fast build rule for target.
-absdiff/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff.dir/build.make CMakeFiles/absdiff.dir/build
-.PHONY : absdiff/fast
+absdiff2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff2.dir/build.make CMakeFiles/absdiff2.dir/build
+.PHONY : absdiff2/fast
 
-src/absdiff.o: src/absdiff.cpp.o
-.PHONY : src/absdiff.o
+src/absdiff2.o: src/absdiff2.cpp.o
+.PHONY : src/absdiff2.o
 
 # target to build an object file
-src/absdiff.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff.dir/build.make CMakeFiles/absdiff.dir/src/absdiff.cpp.o
-.PHONY : src/absdiff.cpp.o
+src/absdiff2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff2.dir/build.make CMakeFiles/absdiff2.dir/src/absdiff2.cpp.o
+.PHONY : src/absdiff2.cpp.o
 
-src/absdiff.i: src/absdiff.cpp.i
-.PHONY : src/absdiff.i
+src/absdiff2.i: src/absdiff2.cpp.i
+.PHONY : src/absdiff2.i
 
 # target to preprocess a source file
-src/absdiff.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff.dir/build.make CMakeFiles/absdiff.dir/src/absdiff.cpp.i
-.PHONY : src/absdiff.cpp.i
+src/absdiff2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff2.dir/build.make CMakeFiles/absdiff2.dir/src/absdiff2.cpp.i
+.PHONY : src/absdiff2.cpp.i
 
-src/absdiff.s: src/absdiff.cpp.s
-.PHONY : src/absdiff.s
+src/absdiff2.s: src/absdiff2.cpp.s
+.PHONY : src/absdiff2.s
 
 # target to generate assembly for a file
-src/absdiff.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff.dir/build.make CMakeFiles/absdiff.dir/src/absdiff.cpp.s
-.PHONY : src/absdiff.cpp.s
+src/absdiff2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/absdiff2.dir/build.make CMakeFiles/absdiff2.dir/src/absdiff2.cpp.s
+.PHONY : src/absdiff2.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... absdiff"
-	@echo "... src/absdiff.o"
-	@echo "... src/absdiff.i"
-	@echo "... src/absdiff.s"
+	@echo "... absdiff2"
+	@echo "... src/absdiff2.o"
+	@echo "... src/absdiff2.i"
+	@echo "... src/absdiff2.s"
 .PHONY : help
 
 

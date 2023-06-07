@@ -11,7 +11,7 @@ else()
   link_directories(/usr/local/lib)
 endif()
 # ビルドに関する設定
-set(EXECUTABLE "absdiff")
+set(EXECUTABLE "absdiff2")
 set(DEPENDENT_LIBS opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc)
 add_executable(${EXECUTABLE} src/${EXECUTABLE}.cpp)
 target_link_libraries(${EXECUTABLE} ${DEPENDENT_LIBS})
